@@ -29,7 +29,7 @@ endef
 
 define Package/cpulimit-ng/install
 	$(INSTALL_DIR) $(1)/usr/bin/
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/cpulimit-ng $(1)/usr/bin/
+	$(INSTALL_BIN) $(PKG_BUILD_DIR)/src/cpulimit-ng $(1)/usr/bin/cpulimit
 endef
 
 $(eval $(call BuildPackage,cpulimit-ng))
